@@ -23,6 +23,7 @@ class LinkedList {
         node<T>* newNode = new node<T>(value);
         if (head == nullptr) {
             head = newNode;
+            newNode.previous = nullptr;
         } else {
             node<T>* temp = head;
             while (temp->next != nullptr) {
