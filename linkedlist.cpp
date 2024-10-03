@@ -7,7 +7,7 @@ class node {
     T data;           // Data of generic type T
     node* next;       // Pointer to the next node in the list
 
-    node(T val) : data(val), next(nullptr) {}
+    node(T val) : previous(nullptr), data(val), next(nullptr) {}
 };
 
 template <typename T>
