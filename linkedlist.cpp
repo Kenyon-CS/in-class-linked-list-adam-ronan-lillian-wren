@@ -24,6 +24,7 @@ class LinkedList {
         node<T>* newNode = new node<T>(value);
         if (head == nullptr) {
             head = newNode;
+            tail = newNode;
             newNode->previous = nullptr;
             newNode->next = nullptr;
         } else {
