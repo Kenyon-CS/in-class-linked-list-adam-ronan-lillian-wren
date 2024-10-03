@@ -26,8 +26,8 @@ class LinkedList {
         } else {
             node<T>* temp = head;
             while (temp->next != nullptr) {
-                temp = temp->next;
                 previous = temp;
+                temp = temp->next;
             }
             temp->next = newNode;
         }
