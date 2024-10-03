@@ -14,9 +14,10 @@ template <typename T>
 class LinkedList {
   private:
     node<T>* head;  // Pointer to the first node of the list
+    node<T>* tail; 
 
   public:
-    LinkedList() : head(nullptr) {}
+    LinkedList() : head(nullptr), tail(nullptr) {}
 
     // Insert at the end
     void append(T value) {
