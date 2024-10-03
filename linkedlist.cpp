@@ -3,6 +3,7 @@
 template <typename T>
 class node {
   public:
+    node* previous;
     T data;           // Data of generic type T
     node* next;       // Pointer to the next node in the list
 
